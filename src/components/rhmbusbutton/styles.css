@@ -1,0 +1,52 @@
+.rhombus {
+  letter-spacing: 0.2em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.5s ease;
+}
+
+.rhombus span {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: #ff00ff;
+  z-index: -1;
+  transition: width 1s ease;
+}
+
+.rhombus span:nth-child(1) {
+  top: 0;
+  left: -50px;
+  transform: skewX(-60deg);
+}
+
+.rhombus:hover span:nth-child(1) {
+  width: 100%;
+}
+
+.rhombus span:nth-child(2) {
+  top: 0;
+  left: -50px;
+  transform: skewX(60deg);
+}
+.rhombus:hover span:nth-child(2) {
+  width: 100%;
+}
+.rhombus span:nth-child(3) {
+  top: 0;
+  right: -50px;
+  transform: skewX(-60deg);
+}
+.rhombus:hover span:nth-child(3) {
+  width: 100%;
+}
+.rhombus span:nth-child(4) {
+  top: 0;
+  right: -50px;
+  transform: skewX(60deg);
+}
+
+.rhombus:hover span:nth-child(4) {
+  width: 100%;
+}
