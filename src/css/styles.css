@@ -208,3 +208,63 @@
 .rhombus:hover span:nth-child(4) {
   width: 100%;
 }
+
+/* CARD */
+.card {
+  max-width: 310px;
+  min-width: 250px;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 15px #7f8080;
+}
+
+.card .image img {
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  height: 25rem;
+  transition: 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+.card figcaption {
+  position: absolute;
+  padding: 15px 20px 40px;
+  bottom: 0;
+  z-index: 1;
+}
+.card figcaption::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(90deg, #b2c4c9, #fff);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.card h3 {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+}
+
+.card a {
+  position: absolute;
+  display: inline-block;
+  font-size: 0.75em;
+  color: white;
+  background: #413b3b;
+  padding: 5px 10px;
+  border-radius: 6px;
+  bottom: 10px;
+  z-index: 1;
+}
