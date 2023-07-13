@@ -1,0 +1,41 @@
+.list-social-icons li {
+  overflow: hidden;
+}
+.list-social-icons li a i {
+  color: #666;
+  line-height: 80px;
+  transform: translateY(0);
+  transition: 0.3s ease;
+}
+
+.list-social-icons li:hover a i {
+  transform: translateY(-100%);
+}
+
+.list-social-icons li a i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
+.list-social-icons li:nth-child(1) a i::after {
+  content: "\f099";
+  color: #1da1f2;
+}
+
+.list-social-icons li:nth-child(2) a i::after {
+  content: "\f39e";
+  color: #3b5998;
+}
+
+.list-social-icons li:nth-child(3) a i::after {
+  content: "\f167";
+  color: #ff0000;
+}
+
+.list-social-icons li:nth-child(4) a i::after {
+  content: "\f16d";
+  color: #c32aa3;
+}
