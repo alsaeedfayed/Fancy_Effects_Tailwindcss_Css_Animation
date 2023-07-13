@@ -393,3 +393,38 @@ h2:nth-child(1):hover {
 h2:nth-child(2):hover {
   text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f;
 }
+
+/* Dropdown Icon*/
+.dropDownIcon {
+  width: 240px;
+  height: 150px;
+}
+
+.dropDownIcon span {
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  background: #7f0099;
+  border-radius: 40px;
+}
+
+.dropDownIcon span:nth-child(1) {
+  transform: rotate(45deg);
+  left: 24px;
+  transition: 0.5s ease;
+}
+
+.dropDownIcon:hover span:nth-child(1) {
+  transform: rotate(135deg);
+}
+
+.dropDownIcon span:nth-child(2) {
+  transform: rotate(-45deg);
+  right: 24px;
+  transition: 0.5s ease;
+}
+
+.dropDownIcon:hover span:nth-child(2) {
+  transform: rotate(-135deg);
+}
