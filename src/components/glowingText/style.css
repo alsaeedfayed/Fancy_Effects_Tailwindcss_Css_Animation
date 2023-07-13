@@ -1,0 +1,13 @@
+h2 {
+  color: #333;
+  letter-spacing: 4px;
+  transition: 0.5s ease;
+}
+
+h2:nth-child(1):hover {
+  text-shadow: 0 0 10px #0ef, 0 0 20px #0ef, 0 0 40px #0ef;
+}
+
+h2:nth-child(2):hover {
+  text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f;
+}
