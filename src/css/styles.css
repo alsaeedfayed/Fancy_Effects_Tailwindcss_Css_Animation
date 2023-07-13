@@ -268,3 +268,80 @@
   bottom: 10px;
   z-index: 1;
 }
+
+/*Draw border*/
+
+.drawBorder {
+  letter-spacing: 0.2em;
+  transition: 0.4s ease;
+}
+
+.drawBorder:hover {
+  color: var(--clr);
+  letter-spacing: 0.5em;
+  background: #1f242d;
+}
+.drawBorder span {
+  position: absolute;
+  background: var(--clr);
+  display: block;
+}
+
+.drawBorder span:nth-child(1) {
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.drawBorder:hover span:nth-child(1) {
+  transform: scaleX(1);
+}
+
+.drawBorder span:nth-child(2) {
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.5s ease;
+  transition-delay: 0.3s;
+}
+
+.drawBorder:hover span:nth-child(2) {
+  transform: scaleY(1);
+}
+
+.drawBorder span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+  transition-delay: 0.5s;
+}
+
+.drawBorder:hover span:nth-child(3) {
+  transform: scaleX(1);
+}
+
+.drawBorder span:nth-child(4) {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 0.5s ease;
+  transition-delay: 1s;
+}
+
+.drawBorder:hover span:nth-child(4) {
+  transform: scaleY(1);
+}
