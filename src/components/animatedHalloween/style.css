@@ -1,0 +1,82 @@
+.halbutton {
+  z-index: 1;
+  transition: margin 0.5s ease;
+}
+.halbutton:hover {
+  margin-top: 50px;
+  animation: animationButton 5s linear infinite;
+}
+.halbutton::before {
+  content: "Happy Halloween";
+  font-size: 4.5em;
+  position: absolute;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.halbutton:hover::before {
+  transform: scale(1) translateY(-150px);
+  opacity: 1;
+  animation: animationText 5s linear infinite;
+}
+
+@keyframes animationText {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90%,
+  92% {
+    color: #7d2ae8;
+    text-shadow: 0 0 10px #7d2ae8, 0 0 20px #7d2ae8, 0 0 40px #7d2ae8,
+      0 0 80px #7d2ae8, 0 0 160px #7d2ae8;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #ffac09;
+    text-shadow: 0 0 10px #ffac09, 0 0 20px #ffac09, 0 0 40px #ffac09,
+      0 0 80px #ffac09, 0 0 160px #ffac09;
+  }
+}
+
+@keyframes animationButton {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90%,
+  92% {
+    background: #7d2ae8;
+    box-shadow: 0 0 10px #7d2ae8, 0 0 20px #7d2ae8, 0 0 40px #7d2ae8,
+      0 0 80px #7d2ae8, 0 0 160px #7d2ae8;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    background: #ffac09;
+    box-shadow: 0 0 10px #ffac09, 0 0 20px #ffac09, 0 0 40px #ffac09,
+      0 0 80px #ffac09, 0 0 160px #ffac09;
+  }
+}
